@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "clean": "rimraf dist",
-    "dev": "NODE_ENV=development webpack --mode development --progress --devtool source-map",
+    "dev": "webpack --env.NODE_ENV=development --mode development --progress --devtool source-map",
     "lint": "eslint . --ext .jsx --ext .js",
     "build": "webpack --mode production",
     "deploy": "cp ./dist/bundle.js $DS_HOME/wso2/dashboard/deployment/web-ui-apps/analytics-dashboard/public/js/"
